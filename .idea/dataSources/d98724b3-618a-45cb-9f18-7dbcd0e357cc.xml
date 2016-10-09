@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PostgreSQL - nhl@95.213.204.15">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
+    <database id="1" name="nhl">
+      <object-id>16528</object-id>
+      <visible>1</visible>
+    </database>
+    <database id="2" name="postgres">
+      <object-id>12415</object-id>
+    </database>
+    <database id="3" name="test">
+      <object-id>16385</object-id>
+    </database>
+    <database id="4" name="kek">
+      <object-id>16406</object-id>
+    </database>
+    <database id="5" name="makeapartydb">
+      <object-id>16509</object-id>
+    </database>
+    <schema id="6" parent="1" name="public">
+      <object-id>2200</object-id>
+      <visible>1</visible>
+      <introspection-state-number>813</introspection-state-number>
+      <introspection-timestamp>2016-10-08.18:02:33.321</introspection-timestamp>
+    </schema>
+    <schema id="7" parent="1" name="pg_catalog">
+      <object-id>11</object-id>
+    </schema>
+    <schema id="8" parent="1" name="pg_toast">
+      <object-id>99</object-id>
+    </schema>
+    <schema id="9" parent="1" name="pg_temp_1">
+      <object-id>11816</object-id>
+    </schema>
+    <schema id="10" parent="1" name="pg_toast_temp_1">
+      <object-id>11817</object-id>
+    </schema>
+    <schema id="11" parent="1" name="information_schema">
+      <object-id>12123</object-id>
+    </schema>
+    <sequence id="12" parent="6" name="game_id_seq">
+      <object-id>16530</object-id>
+      <state-number>810</state-number>
+    </sequence>
+    <table id="13" parent="6" name="game">
+      <object-id>16532</object-id>
+      <comment>Таблица всех игр сезона</comment>
+      <state-number>810</state-number>
+    </table>
+    <column id="14" parent="13" name="id">
+      <state-number>810</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;game_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="15" parent="13" name="time">
+      <state-number>810</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="16" parent="13" name="team_home">
+      <state-number>812</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="17" parent="13" name="team_away">
+      <state-number>813</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="18" parent="13" name="team1_score">
+      <state-number>810</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="19" parent="13" name="team2_score">
+      <state-number>810</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="20" parent="13" name="status">
+      <state-number>810</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+  </database-model>
+</dataSource>
